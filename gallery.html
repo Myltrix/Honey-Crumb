@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея | Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="icon" href="images/Honey Crumb.jpg" type="image/x-icon">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="left-header">
+      <div class="logo-container">
+        <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+        <div class="logo-text">Honey Crumb</div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html" class="active">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" class="search-input" placeholder="Поиск по галерее..." id="searchInput">
+    </div>
+  </header>
+
+  <!-- Основное содержание -->
+  <main class="gallery-container">
+    
+    <!-- Герой-секция -->
+    <section class="gallery-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Наша галерея</h1>
+        <p class="hero-subtitle">Загляните в наш уютный мир через объектив камеры</p>
+      </div>
+    </section>
+
+    <!-- Фильтры галереи -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="interior">Интерьер</button>
+      <button class="filter-btn" data-filter="food">Еда</button>
+      <button class="filter-btn" data-filter="coffee">Кофе</button>
+      <button class="filter-btn" data-filter="team">Команда</button>
+      <button class="filter-btn" data-filter="events">События</button>
+    </div>
+
+    <!-- Сетка галереи -->
+    <div class="gallery-grid">
+      
+      <!-- Интерьер -->
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Уютный интерьер кофейни" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Уютный интерьер</h3>
+              <p>Наше главное пространство с натуральным деревом и тёплым светом</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Рабочая зона" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Рабочая зона</h3>
+              <p>Комфортное место для работы и встреч</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Тёплый свет вечером" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Вечерняя атмосфера</h3>
+              <p>Особенная атмосфера при свечах после захода солнца</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Декабрь 2023</span>
+        </div>
+      </div>
+
+      <!-- Еда -->
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Ягодный чизкейк" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Ягодный чизкейк</h3>
+              <p>Наш фирменный десерт со свежими ягодами</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Март 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item featured" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1559620192-032c64bc86af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовый круассан" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый круассан</h3>
+              <p>Наше самое популярное изделие</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date highlight">Хит сезона</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовый торт" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый торт</h3>
+              <p>Традиционный рецепт с современной подачей</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовое печенье" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовое печенье</h3>
+              <p>Домашнее печенье по бабушкиному рецепту</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <!-- Кофе -->
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Искусство латте-арт" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Латте-арт</h3>
+              <p>Наш бариста создаёт настоящие произведения искусства</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Март 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовый раф" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый раф</h3>
+              <p>Наша фирменная новинка</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date highlight">Новинка</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Карамельный латте" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Карамельный латте</h3>
+              <p>Самый популярный напиток среди гостей</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <!-- Команда -->
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Наша команда на рабочем месте" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Наша команда</h3>
+              <p>Талантливые бариста и пекари в действии</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Декабрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Процесс приготовления" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Мастерство</h3>
+              <p>Внимание к каждой детали</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <!-- События -->
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Мастер-класс по латте-арту" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Мастер-класс</h3>
+              <p>Учим гостей искусству латте-арта</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Ноябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Вечер живой музыки" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Живая музыка</h3>
+              <p>Тёплые вечера с акустическими концертами</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Октябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Тематическая вечеринка" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Осенний вечер</h3>
+              <p>Специальное осеннее меню и декор</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Сентябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Детский день рождения" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>День рождения</h3>
+              <p>Особенные моменты в нашем пространстве</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Август 2023</span>
+        </div>
+      </div>
+
+      <!-- Дополнительные фото -->
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Панкейки с мёдом" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Панкейки с мёдом</h3>
+              <p>Идеальный завтрак в выходной день</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Июль 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Эспрессо" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Идеальный эспрессо</h3>
+              <p>Искусство в каждой капле</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Июнь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Уголок для чтения" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Уголок для чтения</h3>
+              <p>Любимое место наших книголюбов</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Май 2023</span>
+        </div>
+      </div>
+
+    </div> <!-- Конец gallery-grid -->
+
+    <!-- Кнопка "Загрузить еще" -->
+    <div class="load-more-container">
+      <button class="load-more-btn" id="loadMoreBtn">
+        <i class="fas fa-plus"></i> Показать еще фото
+      </button>
+    </div>
+
+    <!-- Информация о фотосессиях -->
+    <section class="photoshoot-info">
+      <div class="info-content">
+        <h2>Хотите фотосессию в нашей кофейне?</h2>
+        <p>Honey Crumb — идеальное место для профессиональных и любительских фотосессий. 
+           Уютная атмосфера, красивый интерьер и вкусная еда создадут идеальные кадры.</p>
+        <div class="info-features">
+          <div class="feature">
+            <i class="fas fa-camera"></i>
+            <h3>Профессиональная съёмка</h3>
+            <p>Работаем с фотографами и блогерами</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-sun"></i>
+            <h3>Идеальный свет</h3>
+            <p>Большие окна и мягкое освещение</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Бронирование</h3>
+            <p>Забронируйте время для съёмки</p>
+          </div>
+        </div>
+        <button class="contact-photoshoot-btn" id="photoshootBtn">
+          <i class="fas fa-envelope"></i> Забронировать для съёмки
+        </button>
+      </div>
+    </section>
+
+    <!-- Instagram секция -->
+    <section class="instagram-section">
+      <div class="instagram-header">
+        <h2>Следите за нами в Instagram</h2>
+        <p>Ещё больше фото и видео в нашем профиле</p>
+        <a href="https://instagram.com" class="instagram-btn" target="_blank">
+          <i class="fab fa-instagram"></i> @honeycrumb
+        </a>
+      </div>
+      <div class="instagram-grid">
+        <!-- Здесь будут миниатюры из Instagram -->
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1559620192-032c64bc86af?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">
+          Запечатлеваем моменты счастья в каждой чашке кофе и каждом десерте.
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Категории галереи</h3>
+        <ul>
+          <li><a href="#" data-filter="interior">Интерьер</a></li>
+          <li><a href="#" data-filter="food">Еда</a></li>
+          <li><a href="#" data-filter="coffee">Кофе</a></li>
+          <li><a href="#" data-filter="team">Команда</a></li>
+          <li><a href="#" data-filter="events">События</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Для фотографов</h3>
+        <ul>
+          <li><a href="#photoshoot-info">Фотосессии</a></li>
+          <li><a href="#photoshoot-info">Бронирование</a></li>
+          <li><a href="#photoshoot-info">Правила съёмки</a></li>
+          <li><a href="#photoshoot-info">Сотрудничество</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты для съёмок</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +7 (999) 987-65-43</p>
+          <p><i class="fas fa-envelope"></i> photoshoot@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Пн-Пт: 10:00-18:00</p>
+          <p><i class="fas fa-camera"></i> Только по предварительной записи</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все фото защищены авторским правом.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <!-- Модальное окно для просмотра фото -->
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-image-container">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div class="modal-meta">
+          <span id="modalCategory"></span>
+          <span id="modalDate"></span>
+        </div>
+      </div>
+      <div class="modal-controls">
+        <button class="modal-prev" id="modalPrev">
+          <i class="fas fa-chevron-left"></i> Предыдущее
+        </button>
+        <button class="modal-next" id="modalNext">
+          Следующее <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Переменные для галереи
+    let currentImageIndex = 0;
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalDate = document.getElementById('modalDate');
+    const modalClose = document.getElementById('modalClose');
+    const modalPrev = document.getElementById('modalPrev');
+    const modalNext = document.getElementById('modalNext');
+    
+    // Массив всех изображений для модального окна
+    const allImages = Array.from(galleryItems).map(item => ({
+      src: item.querySelector('img').src,
+      title: item.querySelector('.overlay-content h3').textContent,
+      description: item.querySelector('.overlay-content p').textContent,
+      category: item.querySelector('.category-tag').textContent,
+      date: item.querySelector('.image-date').textContent
+    }));
+
+    // Фильтрация по категориям
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        // Удаляем активный класс у всех кнопок
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Добавляем активный класс текущей кнопке
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+            // Анимация появления
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 100);
+          } else {
+            // Анимация исчезновения
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Открытие модального окна
+    document.querySelectorAll('.view-btn').forEach((button, index) => {
+      button.addEventListener('click', function() {
+        const galleryItem = this.closest('.gallery-item');
+        const img = galleryItem.querySelector('img');
+        const title = galleryItem.querySelector('.overlay-content h3').textContent;
+        const description = galleryItem.querySelector('.overlay-content p').textContent;
+        const category = galleryItem.querySelector('.category-tag').textContent;
+        const date = galleryItem.querySelector('.image-date').textContent;
+        
+        currentImageIndex = index;
+        
+        // Устанавливаем данные в модальное окно
+        modalImage.src = img.src;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        modalCategory.textContent = category;
+        modalDate.textContent = date;
+        
+        // Показываем модальное окно
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Закрытие модального окна
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Закрытие по клику на оверлей
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Закрытие по Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Навигация по изображениям
+    modalPrev.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+      updateModalImage();
+    });
+
+    modalNext.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % allImages.length;
+      updateModalImage();
+    });
+
+    // Навигация стрелками клавиатуры
+    document.addEventListener('keydown', (e) => {
+      if (!modal.classList.contains('active')) return;
+      
+      if (e.key === 'ArrowLeft') {
+        currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+        updateModalImage();
+      } else if (e.key === 'ArrowRight') {
+        currentImageIndex = (currentImageIndex + 1) % allImages.length;
+        updateModalImage();
+      }
+    });
+
+    // Функция обновления изображения в модальном окне
+    function updateModalImage() {
+      const image = allImages[currentImageIndex];
+      
+      // Анимация смены изображения
+      modalImage.style.opacity = '0';
+      setTimeout(() => {
+        modalImage.src = image.src;
+        modalTitle.textContent = image.title;
+        modalDescription.textContent = image.description;
+        modalCategory.textContent = image.category;
+        modalDate.textContent = image.date;
+        modalImage.style.opacity = '1';
+      }, 300);
+    }
+
+    // Кнопка "Загрузить еще"
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const hiddenImages = [
+      {
+        category: 'food',
+        src: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Фруктовая тарелка',
+        description: 'Свежие сезонные фрукты'
+      },
+      {
+        category: 'coffee',
+        src: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Утренний капучино',
+        description: 'Идеальное начало дня'
+      },
+      {
+        category: 'interior',
+        src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Осенний декор',
+        description: 'Сезонное оформление'
+      }
+    ];
+
+    let loadedCount = 0;
+
+    loadMoreBtn.addEventListener('click', () => {
+      if (loadedCount >= hiddenImages.length) {
+        loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> Все фото загружены';
+        loadMoreBtn.disabled = true;
+        return;
+      }
+
+      const imageData = hiddenImages[loadedCount];
+      const galleryGrid = document.querySelector('.gallery-grid');
+      
+      // Создаем новую карточку
+      const newItem = document.createElement('div');
+      newItem.className = 'gallery-item';
+      newItem.setAttribute('data-category', imageData.category);
+      
+      newItem.innerHTML = `
+        <div class="gallery-image">
+          <img src="${imageData.src}" alt="${imageData.title}" loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>${imageData.title}</h3>
+              <p>${imageData.description}</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">${imageData.category === 'food' ? 'Еда' : 
+                                       imageData.category === 'coffee' ? 'Кофе' : 'Интерьер'}</span>
+          <span class="image-date">Новое</span>
+        </div>
+      `;
+      
+      // Добавляем с анимацией
+      newItem.style.opacity = '0';
+      newItem.style.transform = 'translateY(20px)';
+      galleryGrid.appendChild(newItem);
+      
+      // Анимация появления
+      setTimeout(() => {
+        newItem.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        newItem.style.opacity = '1';
+        newItem.style.transform = 'translateY(0)';
+        
+        // Добавляем обработчик для нового view-btn
+        const newViewBtn = newItem.querySelector('.view-btn');
+        newViewBtn.addEventListener('click', function() {
+          const galleryItem = this.closest('.gallery-item');
+          const img = galleryItem.querySelector('img');
+          const title = galleryItem.querySelector('.overlay-content h3').textContent;
+          const description = galleryItem.querySelector('.overlay-content p').textContent;
+          const category = galleryItem.querySelector('.category-tag').textContent;
+          const date = galleryItem.querySelector('.image-date').textContent;
+          
+          // Добавляем в массив изображений
+          allImages.push({
+            src: img.src,
+            title: title,
+            description: description,
+            category: category,
+            date: date
+          });
+          
+          currentImageIndex = allImages.length - 1;
+          
+          modalImage.src = img.src;
+          modalTitle.textContent = title;
+          modalDescription.textContent = description;
+          modalCategory.textContent = category;
+          modalDate.textContent = date;
+          
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }, 10);
+      
+      loadedCount++;
+      
+      // Обновляем текст кнопки
+      if (loadedCount >= hiddenImages.length) {
+        loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> Все фото загружены';
+        loadMoreBtn.disabled = true;
+      }
+    });
+
+    // Кнопка бронирования для фотосессии
+    document.getElementById('photoshootBtn').addEventListener('click', () => {
+      alert('Для бронирования фотосессии позвоните по номеру +7 (999) 987-65-43 или напишите на photoshoot@honeycrumb.ru');
+    });
+
+    // Поиск по галерее
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase().trim();
+      
+      galleryItems.forEach(item => {
+        const title = item.querySelector('.overlay-content h3').textContent.toLowerCase();
+        const description = item.querySelector('.overlay-content p').textContent.toLowerCase();
+        const category = item.querySelector('.category-tag').textContent.toLowerCase();
+        
+        if (searchTerm === '' || 
+            title.includes(searchTerm) || 
+            description.includes(searchTerm) || 
+            category.includes(searchTerm)) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 100);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+
+    // Фильтрация из футера
+    document.querySelectorAll('.footer-column a[data-filter]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const filter = this.getAttribute('data-filter');
+        
+        // Нажимаем соответствующую кнопку фильтра
+        const filterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+        if (filterBtn) {
+          filterBtn.click();
+          // Прокручиваем к галерее
+          document.querySelector('.gallery-filters').scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Ленивая загрузка изображений
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('loaded');
+          imageObserver.unobserve(img);
+        }
+      });
+    });
+
+    // Наблюдаем за всеми изображениями
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      if (!img.src) {
+        img.dataset.src = img.src;
+        img.src = '';
+        imageObserver.observe(img);
+      }
+    });
+
+    // Анимация появления элементов при скролле
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Наблюдаем за элементами галереи
+    galleryItems.forEach(item => {
+      scrollObserver.observe(item);
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню | Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" href="images/Honey Crumb.jpg" type="image/x-icon">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="left-header">
+      <div class="logo-container">
+        <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+        <div class="logo-text">Honey Crumb</div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html" class="active">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" class="search-input" placeholder="Поиск в меню..." id="searchInput">
+    </div>
+  </header>
+
+  <!-- Основное содержание страницы меню -->
+  <main class="menu-container">
+    <!-- Заголовок страницы -->
+    <div class="menu-header">
+      <h1>Наше меню</h1>
+      <p class="menu-subtitle">Всё готовится с любовью и натуральными ингредиентами</p>
+    </div>
+
+    <!-- Фильтры категорий -->
+    <div class="category-filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="coffee">Кофе</button>
+      <button class="filter-btn" data-filter="tea">Чай</button>
+      <button class="filter-btn" data-filter="cold-drinks">Холодные напитки</button>
+      <button class="filter-btn" data-filter="desserts">Десерты</button>
+      <button class="filter-btn" data-filter="breakfast">Завтраки</button>
+    </div>
+
+    <!-- Кофе -->
+    <section class="menu-section" id="coffee">
+      <h2 class="section-title">
+        <i class="fas fa-coffee"></i>
+        Кофе
+      </h2>
+      <div class="menu-items-grid">
+        
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Карамельный латте">
+            <span class="item-badge popular">Популярный</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Карамельный латте</h3>
+            <p class="item-description">Ароматный эспрессо с молоком, карамельным сиропом и воздушной пенкой</p>
+            <div class="item-details">
+              <span class="item-price">850₸</span>
+              <span class="item-volume">350 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Капучино">
+          </div>
+          <div class="menu-item-info">
+            <h3>Капучино</h3>
+            <p class="item-description">Классический итальянский кофе с идеальным соотношением эспрессо, молока и пенки</p>
+            <div class="item-details">
+              <span class="item-price">750₸</span>
+              <span class="item-volume">300 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Медовый раф">
+            <span class="item-badge new">Новинка</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Медовый раф</h3>
+            <p class="item-description">Нежный кофейный напиток с натуральным мёдом и сливочными сливками</p>
+            <div class="item-details">
+              <span class="item-price">950₸</span>
+              <span class="item-volume">350 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Флэт уайт">
+          </div>
+          <div class="menu-item-info">
+            <h3>Флэт уайт</h3>
+            <p class="item-description">Двойной эспрессо с тонким слоем микропены</p>
+            <div class="item-details">
+              <span class="item-price">800₸</span>
+              <span class="item-volume">200 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Американо">
+          </div>
+          <div class="menu-item-info">
+            <h3>Американо</h3>
+            <p class="item-description">Крепкий эспрессо, разбавленный горячей водой</p>
+            <div class="item-details">
+              <span class="item-price">600₸</span>
+              <span class="item-volume">250 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Эспрессо">
+          </div>
+          <div class="menu-item-info">
+            <h3>Эспрессо</h3>
+            <p class="item-description">Классический крепкий кофе по-итальянски</p>
+            <div class="item-details">
+              <span class="item-price">550₸</span>
+              <span class="item-volume">30 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Чай -->
+    <section class="menu-section" id="tea">
+      <h2 class="section-title">
+        <i class="fas fa-mug-hot"></i>
+        Чай
+      </h2>
+      <div class="menu-items-grid">
+        
+        <div class="menu-item" data-category="tea">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Мятный чай">
+          </div>
+          <div class="menu-item-info">
+            <h3>Мятный чай</h3>
+            <p class="item-description">Освежающий чай с листьями мяты и мелиссы</p>
+            <div class="item-details">
+              <span class="item-price">650₸</span>
+              <span class="item-volume">400 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1561034921-7cbd1c8618e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Черный чай с бергамотом">
+          </div>
+          <div class="menu-item-info">
+            <h3>Чёрный чай с бергамотом</h3>
+            <p class="item-description">Классический английский чай с цитрусовыми нотами</p>
+            <div class="item-details">
+              <span class="item-price">700₸</span>
+              <span class="item-volume">400 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Зелёный чай с жасмином">
+            <span class="item-badge popular">Популярный</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Зелёный чай с жасмином</h3>
+            <p class="item-description">Нежный зелёный чай с цветами жасмина</p>
+            <div class="item-details">
+              <span class="item-price">750₸</span>
+              <span class="item-volume">400 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Фруктовый чай">
+          </div>
+          <div class="menu-item-info">
+            <h3>Фруктовый чай</h3>
+            <p class="item-description">Яркий микс сушёных фруктов и ягод</p>
+            <div class="item-details">
+              <span class="item-price">800₸</span>
+              <span class="item-volume">400 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Холодные напитки -->
+    <section class="menu-section" id="cold-drinks">
+      <h2 class="section-title">
+        <i class="fas fa-glass-whiskey"></i>
+        Холодные напитки
+      </h2>
+      <div class="menu-items-grid">
+        
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Мятный лимонад">
+            <span class="item-badge new">Новинка</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Мятный лимонад</h3>
+            <p class="item-description">Освежающий лимонад с мятой, лаймом и газированной водой</p>
+            <div class="item-details">
+              <span class="item-price">900₸</span>
+              <span class="item-volume">500 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1628992682633-bf2d40cb595f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ягодный морс">
+          </div>
+          <div class="menu-item-info">
+            <h3>Ягодный морс</h3>
+            <p class="item-description">Натуральный морс из лесных ягод без добавления сахара</p>
+            <div class="item-details">
+              <span class="item-price">850₸</span>
+              <span class="item-volume">450 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Айс латте">
+          </div>
+          <div class="menu-item-info">
+            <h3>Айс латте</h3>
+            <p class="item-description">Холодный латте со льдом и молоком</p>
+            <div class="item-details">
+              <span class="item-price">950₸</span>
+              <span class="item-volume">400 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="cold-drinks">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1621203568607-5f0e5b6f5c5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Фраппе с карамелью">
+          </div>
+          <div class="menu-item-info">
+            <h3>Фраппе с карамелью</h3>
+            <p class="item-description">Взбитый холодный кофе с карамельным сиропом и сливками</p>
+            <div class="item-details">
+              <span class="item-price">1100₸</span>
+              <span class="item-volume">450 мл</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Десерты -->
+    <section class="menu-section" id="desserts">
+      <h2 class="section-title">
+        <i class="fas fa-ice-cream"></i>
+        Десерты
+      </h2>
+      <div class="menu-items-grid">
+        
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ягодный чизкейк">
+            <span class="item-badge popular">Хит</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Ягодный чизкейк</h3>
+            <p class="item-description">Нежный чизкейк с песочной основой и свежими ягодами</p>
+            <div class="item-details">
+              <span class="item-price">1650₸</span>
+              <span class="item-volume">180 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Медовый торт">
+          </div>
+          <div class="menu-item-info">
+            <h3>Медовый торт</h3>
+            <p class="item-description">Нежные медовые коржи со сметанным кремом</p>
+            <div class="item-details">
+              <span class="item-price">1450₸</span>
+              <span class="item-volume">200 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Медовое печенье">
+            <span class="item-badge popular">Популярный</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Медовое печенье (3 шт)</h3>
+            <p class="item-description">Домашнее печенье с мёдом, корицей и грецкими орехами</p>
+            <div class="item-details">
+              <span class="item-price">750₸</span>
+              <span class="item-volume">90 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="desserts">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Тирамису">
+          </div>
+          <div class="menu-item-info">
+            <h3>Тирамису</h3>
+            <p class="item-description">Итальянский десерт с кофе, маскарпоне и какао</p>
+            <div class="item-details">
+              <span class="item-price">1550₸</span>
+              <span class="item-volume">160 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Завтраки -->
+    <section class="menu-section" id="breakfast">
+      <h2 class="section-title">
+        <i class="fas fa-egg"></i>
+        Завтраки
+      </h2>
+      <div class="menu-items-grid">
+        
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Панкейки с мёдом">
+            <span class="item-badge popular">Хит</span>
+          </div>
+          <div class="menu-item-info">
+            <h3>Панкейки с мёдом</h3>
+            <p class="item-description">Три пышных панкейка с натуральным мёдом, свежими ягодами и взбитыми сливками</p>
+            <div class="item-details">
+              <span class="item-price">2250₸</span>
+              <span class="item-volume">350 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Английский завтрак">
+          </div>
+          <div class="menu-item-info">
+            <h3>Английский завтрак</h3>
+            <p class="item-description">Яичница, бекон, сосиски, грибы, помидоры и тосты</p>
+            <div class="item-details">
+              <span class="item-price">2850₸</span>
+              <span class="item-volume">450 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Сырники">
+          </div>
+          <div class="menu-item-info">
+            <h3>Сырники со сметаной</h3>
+            <p class="item-description">Домашние сырники с изюмом, подаются со сметаной и ягодным джемом</p>
+            <div class="item-details">
+              <span class="item-price">1950₸</span>
+              <span class="item-volume">300 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <div class="menu-item-image">
+            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Овсянка с ягодами">
+          </div>
+          <div class="menu-item-info">
+            <h3>Овсянка с ягодами</h3>
+            <p class="item-description">Полезная овсяная каша на миндальном молоке с ягодами, орехами и мёдом</p>
+            <div class="item-details">
+              <span class="item-price">1650₸</span>
+              <span class="item-volume">350 г</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fas fa-plus"></i> Добавить
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Баннер с акцией -->
+    <div class="promo-banner">
+      <div class="promo-content">
+        <h3>Специальное предложение!</h3>
+        <p>При заказе от 5000₸ — кофе в подарок!</p>
+        <button class="promo-btn" id="reserveTableBtn">
+          <i class="fas fa-calendar-alt"></i> Забронировать стол
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">Свежая выпечка, натуральные ингредиенты и уютная атмосфера для каждого.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Меню</h3>
+        <ul>
+          <li><a href="#coffee">Кофе</a></li>
+          <li><a href="#tea">Чай</a></li>
+          <li><a href="#cold-drinks">Холодные напитки</a></li>
+          <li><a href="#desserts">Десерты</a></li>
+          <li><a href="#breakfast">Завтраки</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Сладкая, 15</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> hello@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Ежедневно 8:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все права защищены.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <script>
+    // Фильтрация по категориям
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        // Удаляем активный класс у всех кнопок
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Добавляем активный класс текущей кнопке
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        if (filter === 'all') {
+          // Показываем все элементы
+          menuItems.forEach(item => {
+            item.style.display = 'flex';
+          });
+          // Показываем все секции
+          document.querySelectorAll('.menu-section').forEach(section => {
+            section.style.display = 'block';
+          });
+        } else {
+          // Сначала скрываем все элементы
+          menuItems.forEach(item => {
+            item.style.display = 'none';
+          });
+          // Скрываем все секции
+          document.querySelectorAll('.menu-section').forEach(section => {
+            section.style.display = 'none';
+          });
+          
+          // Показываем нужные элементы
+          const filteredItems = document.querySelectorAll(`.menu-item[data-category="${filter}"]`);
+          filteredItems.forEach(item => {
+            item.style.display = 'flex';
+          });
+          
+          // Показываем нужную секцию
+          const targetSection = document.getElementById(filter);
+          if (targetSection) {
+            targetSection.style.display = 'block';
+          }
+        }
+      });
+    });
+
+    // Поиск по меню
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase().trim();
+      const menuItems = document.querySelectorAll('.menu-item');
+      
+      if (searchTerm === '') {
+        // Если поиск пустой, показываем все элементы текущей категории
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+        if (activeFilter === 'all') {
+          menuItems.forEach(item => {
+            item.style.display = 'flex';
+          });
+        } else {
+          menuItems.forEach(item => {
+            if (item.getAttribute('data-category') === activeFilter) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        }
+      } else {
+        // Ищем совпадения
+        menuItems.forEach(item => {
+          const title = item.querySelector('h3').textContent.toLowerCase();
+          const description = item.querySelector('.item-description').textContent.toLowerCase();
+          
+          if (title.includes(searchTerm) || description.includes(searchTerm)) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+    });
+
+    // Добавление в корзину
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const menuItem = this.closest('.menu-item');
+        const itemName = menuItem.querySelector('h3').textContent;
+        const itemPrice = menuItem.querySelector('.item-price').textContent;
+        
+        // Анимация добавления
+        this.innerHTML = '<i class="fas fa-check"></i> Добавлено';
+        this.style.backgroundColor = '#4CAF50';
+        
+        // Восстановление кнопки через 2 секунды
+        setTimeout(() => {
+          this.innerHTML = '<i class="fas fa-plus"></i> Добавить';
+          this.style.backgroundColor = '';
+        }, 2000);
+        
+        // Уведомление
+        alert(`🍯 "${itemName}" добавлен в корзину!\nСтоимость: ${itemPrice}`);
+        
+        // Здесь можно добавить логику для реальной корзины
+        console.log('Добавлено в корзину:', itemName, itemPrice);
+      });
+    });
+
+    // Кнопка бронирования стола
+    document.getElementById('reserveTableBtn').addEventListener('click', function() {
+      alert('Форма бронирования стола будет доступна в ближайшее время!');
+      // В будущем можно добавить модальное окно с формой
+    });
+
+    // Плавная прокрутка к секциям из футера
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
