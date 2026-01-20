@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея | Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="icon" href="images/Honey Crumb.png" type="image/x-icon">
+</head>
+<body>
+ 
+  <div class="modal" id="enlargeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Просмотр фото</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Фото открыто в увеличенном виде!</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="photoshootModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Бронирование для съёмки</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Заявка на бронирование для фотосессии отправлена! Мы свяжемся с вами для уточнения деталей.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+  <div class="left-header">
+    <div class="logo-container">
+      <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+      <div class="logo-text">Honey Crumb</div>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="gallery.html" class="active">Галерея</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="gallery-container">
+    
+    <section class="gallery-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Наша галерея</h1>
+        <p class="hero-subtitle">Загляните в наш уютный мир через объектив камеры</p>
+      </div>
+    </section>
+
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="interior">Интерьер</button>
+      <button class="filter-btn" data-filter="food">Еда</button>
+      <button class="filter-btn" data-filter="coffee">Кофе</button>
+      <button class="filter-btn" data-filter="team">Команда</button>
+      <button class="filter-btn" data-filter="events">События</button>
+    </div>
+
+    <div class="gallery-grid">
+      
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Уютный интерьер кофейни" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Уютный интерьер</h3>
+              <p>Наше главное пространство с натуральным деревом и тёплым светом</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Рабочая зона" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Рабочая зона</h3>
+              <p>Комфортное место для работы и встреч</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Тёплый свет вечером" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Вечерняя атмосфера</h3>
+              <p>Особенная атмосфера при свечах после захода солнца</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Декабрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Уголок для чтения" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Уголок для чтения</h3>
+              <p>Любимое место наших книголюбов</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Май 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Картины на стенах" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Художественная галерея</h3>
+              <p>Картины местных художников украшают наши стены</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Апрель 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Осенний декор" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Осеннее убранство</h3>
+              <p>Сезонный декор с натуральными материалами</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Интерьер</span>
+          <span class="image-date">Октябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Ягодный чизкейк" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Ягодный чизкейк</h3>
+              <p>Наш фирменный десерт со свежими ягодами</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Март 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item featured" data-category="food">
+        <div class="gallery-image">
+          <img src="data:image/jpeg;base64,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" 
+               alt="Медовый круассан" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый круассан</h3>
+              <p>Наше самое популярное изделие</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date highlight">Хит сезона</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовый торт" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый торт</h3>
+              <p>Традиционный рецепт с современной подачей</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Медовое печенье" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовое печенье</h3>
+              <p>Домашнее печенье по бабушкиному рецепту</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Панкейки с мёдом" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Панкейки с мёдом</h3>
+              <p>Идеальный завтрак в выходной день</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Июль 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="food">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Фруктовая тарелка" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Фруктовая тарелка</h3>
+              <p>Свежие сезонные фрукты для легкого перекуса</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Еда</span>
+          <span class="image-date">Июнь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Искусство латте-арт" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Латте-арт</h3>
+              <p>Наш бариста создаёт настоящие произведения искусства</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Март 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://api2.edostavka.by/storage/admin/images/XCwVulOCrVu6S6jatzAFW4LY42QKGw9L1Gr5TYpA.jpg" 
+               alt="Медовый раф" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Медовый раф</h3>
+              <p>Наша фирменная новинка</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date highlight">Новинка</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Карамельный латте" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Карамельный латте</h3>
+              <p>Самый популярный напиток среди гостей</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Эспрессо" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Идеальный эспрессо</h3>
+              <p>Искусство в каждой капле</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Июнь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Капучино" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Утренний капучино</h3>
+              <p>Идеальное начало дня с воздушной пенкой</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Апрель 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="coffee">
+        <div class="gallery-image">
+          <img src="https://img.freepik.com/free-photo/close-up-barista-hands-preparing-coffee-customer-coffee-shop_93675-135317.jpg?semt=ais_hybrid&w=740&q=80" 
+               alt="Кофейная станция" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Кофейная станция</h3>
+              <p>Профессиональное оборудование для идеального кофе</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Кофе</span>
+          <span class="image-date">Май 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://static.tildacdn.com/tild3136-3335-4439-a236-323339623962/komanda-restoran.jpg" 
+               alt="Наша команда на рабочем месте" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Наша команда</h3>
+              <p>Талантливые бариста и пекари в действии</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Декабрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://mirespresso.by/upload/iblock/9b5/9b5f919cf6d122a5e75ba491c1a176c5.png" 
+               alt="Процесс приготовления" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Мастерство</h3>
+              <p>Внимание к каждой детали</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Обучение бариста" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Обучение бариста</h3>
+              <p>Передача опыта и мастерства новым сотрудникам</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Март 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://dolgoprudnyj.eda-kak-doma.ru/images/cfghry4578ilj.jpg" 
+               alt="Работа пекаря" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Искусство выпечки</h3>
+              <p>Наш шеф-пекар создает настоящие шедевры</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Февраль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://coffee-static.storage.yandexcloud.net/files/shares/data/blog/1738335170.9669-image3-full.jpg" 
+               alt="Командная работа" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Слаженная работа</h3>
+              <p>Каждый член команды важен для нашего успеха</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Январь 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="team">
+        <div class="gallery-image">
+          <img src="https://img3.stockfresh.com/files/d/deandrobot/m/57/9291041_stock-photo-portrait-of-a-smiling-young-barista-girl-in-apron.jpg" 
+               alt="Улыбки команды" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Дружная команда</h3>
+              <p>Наши сотрудники - лицо кофейни</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">Команда</span>
+          <span class="image-date">Декабрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Мастер-класс по латте-арту" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Мастер-класс</h3>
+              <p>Учим гостей искусству латте-арта</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Ноябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Вечер живой музыки" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Живая музыка</h3>
+              <p>Тёплые вечера с акустическими концертами</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Октябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Тематическая вечеринка" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Осенний вечер</h3>
+              <p>Специальное осеннее меню и декор</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Сентябрь 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Детский день рождения" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>День рождения</h3>
+              <p>Особенные моменты в нашем пространстве</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Август 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Выставка художников" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Выставка художников</h3>
+              <p>Поддержка местных талантов и искусства</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Июль 2024</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Книжный клуб" 
+               loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>Встреча книжного клуба</h3>
+              <p>Обсуждение литературы за чашкой кофе</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">События</span>
+          <span class="image-date">Июнь 2024</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="load-more-container">
+      <button class="load-more-btn" id="loadMoreBtn">
+        <i class="fas fa-plus"></i> Показать еще фото
+      </button>
+    </div>
+
+    <section class="photoshoot-info">
+      <div class="info-content">
+        <h2>Хотите фотосессию в нашей кофейне?</h2>
+        <p>Honey Crumb — идеальное место для профессиональных и любительских фотосессий. 
+           Уютная атмосфера, красивый интерьер и вкусная еда создадут идеальные кадры.</p>
+        <div class="info-features">
+          <div class="feature">
+            <i class="fas fa-camera"></i>
+            <h3>Профессиональная съёмка</h3>
+            <p>Работаем с фотографами и блогерами</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-sun"></i>
+            <h3>Идеальный свет</h3>
+            <p>Большие окна и мягкое освещение</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Бронирование</h3>
+            <p>Забронируйте время для съёмки</p>
+          </div>
+        </div>
+        <button class="contact-photoshoot-btn" id="photoshootBtn">
+          <i class="fas fa-envelope"></i> Забронировать для съёмки
+        </button>
+      </div>
+    </section>
+
+    <section class="instagram-section">
+      <div class="instagram-header">
+        <h2>Следите за нами в Instagram</h2>
+        <p>Ещё больше фото и видео в нашем профиле</p>
+        <a href="https://instagram.com" class="instagram-btn" target="_blank">
+          <i class="fab fa-instagram"></i> @honeycrumb
+        </a>
+      </div>
+      <div class="instagram-grid">
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="data:image/jpeg;base64,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" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram post">
+          <div class="instagram-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">Свежая выпечка, натуральные ингредиенты и уютная атмосфера для каждого.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Меню</h3>
+        <ul>
+          <li><a href="menu.html">Десерты</a></li>
+          <li><a href="menu.html">Выпечка</a></li>
+          <li><a href="menu.html">Напитки</a></li>
+          <li><a href="menu.html">Завтраки</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Сладкая, 15</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> hello@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Ежедневно 8:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все права защищены.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <script>
+    const enlargeModal = document.getElementById('enlargeModal');
+    const photoshootModal = document.getElementById('photoshootModal');
+    
+    document.querySelectorAll('.view-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        enlargeModal.style.display = 'flex';
+      });
+    });
+    
+    document.getElementById('photoshootBtn').addEventListener('click', function() {
+      photoshootModal.style.display = 'flex';
+    });
+    
+    document.querySelectorAll('.modal-close, .modal-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.modal').forEach(modal => {
+          modal.style.display = 'none';
+        });
+      });
+    });
+    
+    window.addEventListener('click', function(e) {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.footer-column a[data-filter]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const filter = this.getAttribute('data-filter');
+        
+        const filterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+        if (filterBtn) {
+          filterBtn.click();
+          document.querySelector('.gallery-filters').scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    const hiddenImages = [
+      {
+        category: 'food',
+        src: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Фруктовая тарелка',
+        description: 'Свежие сезонные фрукты'
+      },
+      {
+        category: 'coffee',
+        src: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Утренний капучино',
+        description: 'Идеальное начало дня'
+      },
+      {
+        category: 'interior',
+        src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        title: 'Осенний декор',
+        description: 'Сезонное оформление'
+      }
+    ];
+
+    let loadedCount = 0;
+
+    document.getElementById('loadMoreBtn').addEventListener('click', () => {
+      if (loadedCount >= hiddenImages.length) {
+        loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> Все фото загружены';
+        loadMoreBtn.disabled = true;
+        return;
+      }
+
+      const imageData = hiddenImages[loadedCount];
+      const galleryGrid = document.querySelector('.gallery-grid');
+      
+      const newItem = document.createElement('div');
+      newItem.className = 'gallery-item';
+      newItem.setAttribute('data-category', imageData.category);
+      
+      newItem.innerHTML = `
+        <div class="gallery-image">
+          <img src="${imageData.src}" alt="${imageData.title}" loading="lazy">
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>${imageData.title}</h3>
+              <p>${imageData.description}</p>
+              <button class="view-btn">
+                <i class="fas fa-expand"></i> Увеличить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <span class="category-tag">${imageData.category === 'food' ? 'Еда' : 
+                                       imageData.category === 'coffee' ? 'Кофе' : 'Интерьер'}</span>
+          <span class="image-date">Новое</span>
+        </div>
+      `;
+      
+      galleryGrid.appendChild(newItem);
+      
+      const newViewBtn = newItem.querySelector('.view-btn');
+      newViewBtn.addEventListener('click', function() {
+        enlargeModal.style.display = 'flex';
+      });
+      
+      loadedCount++;
+      
+      if (loadedCount >= hiddenImages.length) {
+        loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> Все фото загружены';
+        loadMoreBtn.disabled = true;
+      }
+    });
+  </script>
+</body>
+</html>

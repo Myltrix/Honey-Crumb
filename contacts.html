@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="icon" href="images/Honey Crumb.png" type="image/x-icon">
+</head>
+<body>
+  <div class="modal" id="messageModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Сообщение отправлено</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="vacanciesModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Вакансии</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Отправьте своё резюме на hr@honeycrumb.ru</p>
+        <div class="vacancies-list">
+          <div class="vacancy-item">
+            <h4>Бариста</h4>
+            <p>Все кофейни • Полная занятость • От 60 000₸</p>
+          </div>
+          <div class="vacancy-item">
+            <h4>Пекарь</h4>
+            <p>ул. Сладкая, 15 • Сменный график • От 70 000₸</p>
+          </div>
+          <div class="vacancy-item">
+            <h4>Менеджер кофейни</h4>
+            <p>пр. Медовый, 42 • Полная занятость • От 90 000₸</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="left-header">
+      <div class="logo-container">
+        <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+        <div class="logo-text">Honey Crumb</div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html" class="active">Контакты</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-container">
+    
+    <section class="contact-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Наши контакты</h1>
+        <p class="hero-subtitle">Мы всегда рады видеть вас в наших кофейнях</p>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="info-grid">
+        
+        <div class="info-card main-info">
+          <div class="info-icon">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <h2>Контактная информация</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Телефон</h3>
+                <p>+7 (999) 123-45-67</p>
+                <p class="contact-sub">Основной номер</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>hello@honeycrumb.ru</p>
+                <p class="contact-sub">Для общих вопросов</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <h3>Бронирование</h3>
+                <p>+7 (999) 987-65-43</p>
+                <p class="contact-sub">Столики и мероприятия</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Часы работы</h3>
+                <p>Ежедневно 8:00 - 22:00</p>
+                <p class="contact-sub">Без выходных</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card quick-links">
+          <div class="info-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <h2>Быстрые ссылки</h2>
+          <div class="links-grid">
+            <a href="#locations" class="link-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Наши кофейни</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#reservation" class="link-card">
+              <i class="fas fa-calendar-check"></i>
+              <span>Забронировать столик</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#faq" class="link-card">
+              <i class="fas fa-question-circle"></i>
+              <span>Частые вопросы</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#career" class="link-card">
+              <i class="fas fa-briefcase"></i>
+              <span>Карьера у нас</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#wholesale" class="link-card">
+              <i class="fas fa-truck"></i>
+              <span>Оптовые заказы</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#feedback" class="link-card">
+              <i class="fas fa-comment-dots"></i>
+              <span>Обратная связь</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="locations-section" id="locations">
+      <h2 class="section-title">Наши кофейни</h2>
+      <p class="section-subtitle">Выберите ближайшую к вам кофейню</p>
+
+      <div class="locations-grid">
+        
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Кофейня на ул. Сладкой">
+            <div class="location-badge main">Главная</div>
+          </div>
+          <div class="location-info">
+            <h3>ул. Сладкая, 15</h3>
+            <p class="location-description">
+              Наша первая и самая уютная кофейня в историческом центре города.
+            </p>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-subway"></i>
+                <span>м. Центральная</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-car"></i>
+                <span>Парковка рядом</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-wifi"></i>
+                <span>Бесплатный Wi-Fi</span>
+              </div>
+            </div>
+            <div class="location-actions">
+              <button class="action-btn primary" onclick="openMap('ул. Сладкая, 15')">
+                <i class="fas fa-map-marked-alt"></i> Маршрут
+              </button>
+              <button class="action-btn secondary" onclick="callNumber('+79991234567')">
+                <i class="fas fa-phone"></i> Позвонить
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Кофейня на пр. Медовом">
+            <div class="location-badge new">Новая</div>
+          </div>
+          <div class="location-info">
+            <h3>пр. Медовый, 42</h3>
+            <p class="location-description">
+              Современная кофейня с панорамными окнами и просторной террасой.
+            </p>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-subway"></i>
+                <span>м. Современная</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-car"></i>
+                <span>Собственная парковка</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-paw"></i>
+                <span>Pet-friendly</span>
+              </div>
+            </div>
+            <div class="location-actions">
+              <button class="action-btn primary" onclick="openMap('пр. Медовый, 42')">
+                <i class="fas fa-map-marked-alt"></i> Маршрут
+              </button>
+              <button class="action-btn secondary" onclick="callNumber('+79997654321')">
+                <i class="fas fa-phone"></i> Позвонить
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Кофейня на бул. Карамельном">
+          </div>
+          <div class="location-info">
+            <h3>бул. Карамельный, 7</h3>
+            <p class="location-description">
+              Уютная кофейня в зеленом районе города с собственной пекарней.
+            </p>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-subway"></i>
+                <span>м. Зелёная</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-tree"></i>
+                <span>Рядом с парком</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-child"></i>
+                <span>Детская зона</span>
+              </div>
+            </div>
+            <div class="location-actions">
+              <button class="action-btn primary" onclick="openMap('бул. Карамельный, 7')">
+                <i class="fas fa-map-marked-alt"></i> Маршрут
+              </button>
+              <button class="action-btn secondary" onclick="callNumber('+79999876543')">
+                <i class="fas fa-phone"></i> Позвонить
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="map-container">
+        <div class="map-placeholder" id="map">
+          <div class="map-overlay">
+            <h3>Наша главная кофейня</h3>
+            <p>ул. Сладкая, 15</p>
+            <button class="map-btn" onclick="openExternalMap()">
+              <i class="fas fa-external-link-alt"></i> Открыть в Яндекс.Картах
+            </button>
+          </div>
+          <div class="map-marker">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+        </div>
+        <div class="map-info">
+          <h3>Как добраться</h3>
+          <div class="transport-options">
+            <div class="transport-option">
+              <i class="fas fa-subway"></i>
+              <div>
+                <h4>Метро</h4>
+                <p>Станция "Центральная", выход №2</p>
+                <p class="transport-time">5 минут пешком</p>
+              </div>
+            </div>
+            <div class="transport-option">
+              <i class="fas fa-bus"></i>
+              <div>
+                <h4>Автобус</h4>
+                <p>Остановка "Улица Сладкая"</p>
+                <p class="transport-time">Маршруты: 25, 47, 89</p>
+              </div>
+            </div>
+            <div class="transport-option">
+              <i class="fas fa-car"></i>
+              <div>
+                <h4>Автомобиль</h4>
+                <p>Парковка у ТЦ "Сладости"</p>
+                <p class="transport-time">Бесплатно первые 2 часа</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section" id="feedback">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Обратная связь</h2>
+          <p>Есть вопросы или предложения? Напишите нам!</p>
+        </div>
+        
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i> Ваше имя
+              </label>
+              <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i> Email
+              </label>
+              <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">
+              <i class="fas fa-phone"></i> Телефон
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">
+              <i class="fas fa-tag"></i> Тема обращения
+            </label>
+            <select id="subject" name="subject" required>
+              <option value="">Выберите тему</option>
+              <option value="reservation">Бронирование столика</option>
+              <option value="feedback">Отзыв или предложение</option>
+              <option value="corporate">Корпоративное мероприятие</option>
+              <option value="wholesale">Оптовый заказ</option>
+              <option value="career">Трудоустройство</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">
+              <i class="fas fa-comment"></i> Сообщение
+            </label>
+            <textarea id="message" name="message" rows="5" required 
+                      placeholder="Опишите ваш вопрос или предложение..."></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">
+              Хочу получать информацию об акциях и новостях
+            </label>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">
+              Я согласен на обработку персональных данных
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Отправить сообщение
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="faq-container">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <p class="section-subtitle">Ответы на популярные вопросы</p>
+
+        <div class="faq-grid">
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Как забронировать столик?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Вы можете забронировать столик тремя способами:</p>
+              <ul>
+                <li>По телефону: +7 (999) 987-65-43</li>
+                <li>Через форму обратной связи на этой странице</li>
+                <li>Лично в кофейне</li>
+              </ul>
+              <p>Рекомендуем бронировать столик заранее, особенно на вечер пятницы и выходные дни.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Можно ли с детьми?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Да, конечно! Мы рады семьям с детьми. В кофейне на бул. Карамельный, 7 есть специальная детская зона с игрушками и книгами. Также в нашем меню есть детские порции и специальное детское меню.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Есть ли вегетарианские и веганские блюда?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Да, в нашем меню есть несколько вегетарианских и веганских опций. Отметьте это при заказе, и наш персонал поможет подобрать подходящие блюда. Также мы можем адаптировать некоторые блюда под ваши предпочтения.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Можно ли оплатить картой?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Да, мы принимаем все основные банковские карты (Visa, MasterCard, Мир), а также бесконтактные платежи через Apple Pay и Google Pay. Также возможна оплата наличными.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Проводите ли вы мероприятия?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Да, мы организуем различные мероприятия: дни рождения, корпоративы, мастер-классы по латте-арту и выпечке. Для организации мероприятия свяжитесь с нами по телефону бронирования или через форму обратной связи.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Есть ли Wi-Fi?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Да, во всех наших кофейнях есть бесплатный высокоскоростной Wi-Fi. Пароль можно узнать у бариста.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="career-section" id="career">
+      <div class="career-container">
+        <div class="career-content">
+          <h2>Присоединяйтесь к нашей команде</h2>
+          <p>Мы всегда рады талантливым и увлеченным людям. Если вы любите кофе и гостей — вы наш человек!</p>
+          <div class="career-benefits">
+            <div class="benefit">
+              <i class="fas fa-graduation-cap"></i>
+              <h4>Обучение</h4>
+              <p>Курсы бариста и пекарей</p>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-heart"></i>
+              <h4>Атмосфера</h4>
+              <p>Дружный коллектив</p>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-chart-line"></i>
+              <h4>Развитие</h4>
+              <p>Карьерный рост</p>
+            </div>
+          </div>
+          <button class="career-btn" onclick="openVacancies()">
+            <i class="fas fa-briefcase"></i> Посмотреть вакансии
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="social-container">
+        <h2>Мы в социальных сетях</h2>
+        <p>Подписывайтесь, чтобы быть в курсе новостей и акций</p>
+        
+        <div class="social-grid">
+          <a href="https://instagram.com" class="social-card instagram" target="_blank">
+            <div class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <h3>Instagram</h3>
+            <p>Фото и видео из наших кофеен</p>
+            <span class="social-followers">15k подписчиков</span>
+          </a>
+
+          <a href="https://vk.com" class="social-card vk" target="_blank">
+            <div class="social-icon">
+              <i class="fab fa-vk"></i>
+            </div>
+            <h3>VK</h3>
+            <p>Новости и анонсы мероприятий</p>
+            <span class="social-followers">8k подписчиков</span>
+          </a>
+
+          <a href="https://telegram.org" class="social-card telegram" target="_blank">
+            <div class="social-icon">
+              <i class="fab fa-telegram"></i>
+            </div>
+            <h3>Telegram</h3>
+            <p>Акции и специальные предложения</p>
+            <span class="social-followers">5k подписчиков</span>
+          </a>
+
+          <a href="https://youtube.com" class="social-card youtube" target="_blank">
+            <div class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <h3>YouTube</h3>
+            <p>Видео-рецепты и мастер-классы</p>
+            <span class="social-followers">3k подписчиков</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">Свежая выпечка, натуральные ингредиенты и уютная атмосфера для каждого.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Меню</h3>
+        <ul>
+          <li><a href="menu.html">Десерты</a></li>
+          <li><a href="menu.html">Выпечка</a></li>
+          <li><a href="menu.html">Напитки</a></li>
+          <li><a href="menu.html">Завтраки</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Сладкая, 15</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> hello@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Ежедневно 8:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все права защищены.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <script>
+    const messageModal = document.getElementById('messageModal');
+    const vacanciesModal = document.getElementById('vacanciesModal');
+    
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const agree = document.getElementById('agree').checked;
+      
+      if (!agree) {
+        alert('Пожалуйста, согласитесь на обработку персональных данных');
+        return;
+      }
+      
+      messageModal.style.display = 'flex';
+      contactForm.reset();
+    });
+    
+    function openVacancies() {
+      vacanciesModal.style.display = 'flex';
+    }
+    
+    document.querySelectorAll('.modal-close, .modal-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.modal').forEach(modal => {
+          modal.style.display = 'none';
+        });
+      });
+    });
+    
+    window.addEventListener('click', function(e) {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+
+    function openMap(address) {
+      const encodedAddress = encodeURIComponent(address + ', Москва');
+      window.open(`https://yandex.ru/maps/?text=${encodedAddress}`, '_blank');
+    }
+
+    function openExternalMap() {
+      openMap('ул. Сладкая, 15');
+    }
+
+    function callNumber(number) {
+      if (confirm(`Позвонить по номеру ${number}?`)) {
+        window.location.href = `tel:${number}`;
+      }
+    }
+
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            otherItem.querySelector('.faq-question i').classList.remove('fa-chevron-up');
+            otherItem.querySelector('.faq-question i').classList.add('fa-chevron-down');
+          }
+        });
+        
+        item.classList.toggle('active');
+        
+        if (item.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          answer.style.maxHeight = null;
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+
+    const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('input', function(e) {
+      let value = e.target.value.replace(/\D/g, '');
+      
+      if (value.length > 0) {
+        if (value[0] === '7' || value[0] === '8') {
+          value = value.substring(1);
+        }
+        
+        let formatted = '+7 (';
+        
+        if (value.length > 0) {
+          formatted += value.substring(0, 3);
+        }
+        if (value.length > 3) {
+          formatted += ') ' + value.substring(3, 6);
+        }
+        if (value.length > 6) {
+          formatted += '-' + value.substring(6, 8);
+        }
+        if (value.length > 8) {
+          formatted += '-' + value.substring(8, 10);
+        }
+        
+        e.target.value = formatted;
+      }
+    });
+  </script>
+</body>
+</html>

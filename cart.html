@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина - Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="icon" href="images/Honey Crumb.png" type="image/x-icon">
+</head>
+<body>
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Заказ оформлен!</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Ваш заказ успешно оформлен! Мы свяжемся с вами для подтверждения в течение 15 минут.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="promoModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Промокод применён!</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Промокод успешно применён! Скидка учтена в итоговой сумме.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="promoErrorModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Промокод не введён</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Пожалуйста, введите промокод перед применением.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Понятно</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="left-header">
+      <div class="logo-container">
+        <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+        <div class="logo-text">Honey Crumb</div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html" class="active">Корзина</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cart-container">
+    <div class="cart-header">
+      <h1>Ваша корзина</h1>
+      <p class="cart-subtitle">Товаров в корзине: <span id="totalItems">3</span></p>
+    </div>
+
+    <div class="cart-wrapper">
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="https://img.freepik.com/premium-photo/croissants-with-honey-wooden-table_151341-1397.jpg" alt="Медовый круассан">
+          </div>
+          <div class="cart-item-details">
+            <h3>Медовый круассан</h3>
+            <p>Многослойное тесто с натуральным мёдом и миндальной начинкой</p>
+            <div class="cart-item-meta">
+              <span class="item-price">320₸</span>
+              <span class="item-weight">~120г</span>
+            </div>
+          </div>
+          <div class="cart-item-controls">
+            <div class="quantity-control">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="2" min="1" max="10">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="remove-item">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+          <div class="cart-item-total">
+            <span>640₸</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ягодный чизкейк">
+          </div>
+          <div class="cart-item-details">
+            <h3>Ягодный чизкейк</h3>
+            <p>Нежный чизкейк с песочной основой и свежими ягодами</p>
+            <div class="cart-item-meta">
+              <span class="item-price">450₸</span>
+              <span class="item-weight">~200г</span>
+            </div>
+          </div>
+          <div class="cart-item-controls">
+            <div class="quantity-control">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="remove-item">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+          <div class="cart-item-total">
+            <span>450₸</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Карамельный латте">
+          </div>
+          <div class="cart-item-details">
+            <h3>Карамельный латте</h3>
+            <p>Ароматный кофе с карамельным сиропом и молочной пенкой</p>
+            <div class="cart-item-meta">
+              <span class="item-price">280₸</span>
+              <span class="item-size">300 мл</span>
+            </div>
+          </div>
+          <div class="cart-item-controls">
+            <div class="quantity-control">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="remove-item">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+          <div class="cart-item-total">
+            <span>280₸</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-card">
+          <h3>Итого</h3>
+          <div class="summary-row">
+            <span>Товары (3)</span>
+            <span>1,370₸</span>
+          </div>
+          <div class="summary-row">
+            <span>Доставка</span>
+            <span>Бесплатно</span>
+          </div>
+          <div class="summary-row total">
+            <span>К оплате</span>
+            <span id="totalAmount">1,370₸</span>
+          </div>
+          
+          <div class="delivery-options">
+            <h4>Способ получения</h4>
+            <div class="delivery-option active">
+              <input type="radio" name="delivery" id="pickup" checked>
+              <label for="pickup">
+                <i class="fas fa-store"></i>
+                <div>
+                  <strong>Самовывоз из кафе</strong>
+                  <small>Москва, ул. Сладкая, 15</small>
+                </div>
+              </label>
+            </div>
+            <div class="delivery-option">
+              <input type="radio" name="delivery" id="delivery">
+              <label for="delivery">
+                <i class="fas fa-motorcycle"></i>
+                <div>
+                  <strong>Доставка</strong>
+                  <small>Бесплатно от 1000₸</small>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <button class="checkout-btn" id="checkoutBtn">
+            <i class="fas fa-lock"></i>
+            Перейти к оформлению
+          </button>
+          
+          <div class="continue-shopping">
+            <a href="menu.html">
+              <i class="fas fa-arrow-left"></i>
+              Вернуться к покупкам
+            </a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <h4>Есть промокод?</h4>
+          <div class="promo-input">
+            <input type="text" placeholder="Введите промокод">
+            <button class="apply-promo">Применить</button>
+          </div>
+          <div class="promo-info">
+            <p><i class="fas fa-gift"></i> При заказе от 2000₸ скидка 10%</p>
+            <p><i class="fas fa-birthday-cake"></i> В день рождения скидка 15%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">Свежая выпечка, натуральные ингредиенты и уютная атмосфера для каждого.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Меню</h3>
+        <ul>
+          <li><a href="menu.html">Десерты</a></li>
+          <li><a href="menu.html">Выпечка</a></li>
+          <li><a href="menu.html">Напитки</a></li>
+          <li><a href="menu.html">Завтраки</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Сладкая, 15</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> hello@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Ежедневно 8:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все права защищены.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <script>
+    const orderModal = document.getElementById('orderModal');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    
+    checkoutBtn.addEventListener('click', function() {
+      orderModal.style.display = 'flex';
+    });
+    
+    document.querySelector('.apply-promo').addEventListener('click', function() {
+      const promoInput = this.previousElementSibling;
+      const promoValue = promoInput.value.trim();
+      
+      if (promoValue) {
+        const promoModal = document.getElementById('promoModal');
+        promoModal.style.display = 'flex';
+        promoInput.value = '';
+      } else {
+        const promoErrorModal = document.getElementById('promoErrorModal');
+        promoErrorModal.style.display = 'flex';
+      }
+    });
+    
+    document.querySelectorAll('.modal-close, .modal-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.modal').forEach(modal => {
+          modal.style.display = 'none';
+        });
+      });
+    });
+    
+    window.addEventListener('click', function(e) {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+    
+    document.querySelectorAll('.quantity-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const input = this.parentElement.querySelector('.quantity-input');
+        let value = parseInt(input.value);
+        
+        if (this.classList.contains('plus')) {
+          if (value < 10) value++;
+        } else if (this.classList.contains('minus')) {
+          if (value > 1) value--;
+        }
+        
+        input.value = value;
+        updateCart();
+      });
+    });
+    
+    document.querySelectorAll('.remove-item').forEach(button => {
+      button.addEventListener('click', function() {
+        this.closest('.cart-item').remove();
+        updateCart();
+      });
+    });
+    
+    function updateCart() {
+      const items = document.querySelectorAll('.cart-item');
+      const totalItems = items.length;
+      
+      document.querySelector('.cart-count').textContent = totalItems;
+      document.getElementById('totalItems').textContent = totalItems;
+      
+      let totalAmount = 0;
+      items.forEach(item => {
+        const price = parseFloat(item.querySelector('.item-price').textContent);
+        const quantity = parseInt(item.querySelector('.quantity-input').value);
+        const itemTotal = price * quantity;
+        
+        item.querySelector('.cart-item-total span').textContent = itemTotal + '₸';
+        totalAmount += itemTotal;
+      });
+      
+      document.getElementById('totalAmount').textContent = totalAmount.toLocaleString() + '₸';
+      document.querySelector('.summary-row:first-child span:last-child').textContent = totalAmount.toLocaleString() + '₸';
+    }
+    
+    document.querySelectorAll('.delivery-option input').forEach(input => {
+      input.addEventListener('change', function() {
+        document.querySelectorAll('.delivery-option').forEach(option => {
+          option.classList.remove('active');
+        });
+        this.closest('.delivery-option').classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

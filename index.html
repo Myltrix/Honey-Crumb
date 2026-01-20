@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Crumb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="images/Honey Crumb.png" type="image/x-icon">
+</head>
+<body>
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Корзина</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="reservationModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Бронирование</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Столик успешно забронирован! Мы свяжемся с вами для подтверждения.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+  <div class="left-header">
+    <div class="logo-container">
+      <img src="images/Honey Crumb.jpg" alt="Honey Crumb Логотип" class="logo">
+      <div class="logo-text">Honey Crumb</div>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+  </div>
+</header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Fresh bakery. <span class="highlight">Honey & love.</span></h1>
+      <p class="hero-subtitle">Натуральная выпечка, ароматный кофе и уютная атмосфера в самом сердце города</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-primary">Смотреть меню</a>
+        <a href="#reservation" class="btn-secondary">Забронировать столик</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://sedelice.ru/uploads/blog/vypecka-optom.jpg" alt="Выпечка">
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-bread-slice"></i>
+      </div>
+      <h3>Fresh Desserts</h3>
+      <p>Вся выпечка готовится утром из свежих ингредиентов без консервантов</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <h3>Natural Ingredients</h3>
+      <p>Используем только натуральный мёд с местных пасек и органические продукты</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-heart"></i>
+      </div>
+      <h3>Cozy Atmosphere</h3>
+      <p>Уютная атмосфера для работы, встреч с друзьями и семейного отдыха</p>
+    </div>
+  </section>
+
+  <section class="menu-highlight">
+    <h2>Попробуйте наши хиты</h2>
+    <p class="section-subtitle">Самые любимые позиции наших гостей</p>
+    
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-image">
+          <img src="https://img.freepik.com/premium-photo/croissants-with-honey-wooden-table_151341-1397.jpg" alt="Медовый круассан">
+          <span class="menu-badge">Хит</span>
+        </div>
+        <div class="menu-item-content">
+          <h3>Медовый круассан</h3>
+          <p>Многослойное тесто с натуральным мёдом и миндальной начинкой</p>
+          <div class="menu-item-footer">
+            <span class="price">320₸</span>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-item">
+        <div class="menu-item-image">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ягодный чизкейк">
+          <span class="menu-badge new">Новинка</span>
+        </div>
+        <div class="menu-item-content">
+          <h3>Ягодный чизкейк</h3>
+          <p>Нежный чизкейк с песочной основой и свежими ягодами</p>
+          <div class="menu-item-footer">
+            <span class="price">450₸</span>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-item">
+        <div class="menu-item-image">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Карамельный латте">
+        </div>
+        <div class="menu-item-content">
+          <h3>Карамельный латте</h3>
+          <p>Ароматный кофе с карамельным сиропом и молочной пенкой</p>
+          <div class="menu-item-footer">
+            <span class="price">280₸</span>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-item">
+        <div class="menu-item-image">
+          <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Медовое печенье">
+        </div>
+        <div class="menu-item-content">
+          <h3>Медовое печенье</h3>
+          <p>Домашнее печенье с мёдом, корицей и грецкими орехами</p>
+          <div class="menu-item-footer">
+            <span class="price">180₸</span>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-all">
+      <a href="menu.html" class="view-all-btn">Смотреть всё меню →</a>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <div class="about-content">
+      <h2>Наша история</h2>
+      <p>Honey Crumb родился из любви к традиционной выпечке и желания создать уютное место, где каждый может насладиться моментом. Мы начали с маленькой домашней пекарни, а теперь радуем гостей в самом центре города.</p>
+      <p>Наша философия проста: качественные ингредиенты, внимание к деталям и тёплый приём для каждого гостя.</p>
+      <a href="about.html" class="about-btn">Узнать больше о нас</a>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Интерьер кафе">
+    </div>
+  </section>
+
+  <section class="gallery-preview">
+    <h2>Наша атмосфера</h2>
+    <p class="section-subtitle">Загляните в наш уютный мир</p>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Интерьер">
+        <div class="gallery-overlay">
+          <span>Уютный интерьер</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Кофе">
+        <div class="gallery-overlay">
+          <span>Ароматный кофе</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Выпечка">
+        <div class="gallery-overlay">
+          <span>Свежая выпечка</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Гости">
+        <div class="gallery-overlay">
+          <span>Счастливые гости</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation" id="reservation">
+    <div class="reservation-content">
+      <h2>Забронируйте столик</h2>
+      <p>Хотите гарантированно получить лучший столик? Забронируйте заранее!</p>
+      
+      <form class="reservation-form">
+        <div class="form-group">
+          <input type="text" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Время</option>
+              <option>10:00</option>
+              <option>12:00</option>
+              <option>14:00</option>
+              <option>16:00</option>
+              <option>18:00</option>
+              <option>20:00</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Количество гостей</option>
+              <option>1-2</option>
+              <option>3-4</option>
+              <option>5-6</option>
+              <option>7+</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="reservation-btn">Забронировать</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/Honey Crumb.jpg" alt="Логотип">
+          <span>Honey Crumb</span>
+        </div>
+        <p class="footer-description">Свежая выпечка, натуральные ингредиенты и уютная атмосфера для каждого.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Меню</h3>
+        <ul>
+          <li><a href="menu.html">Десерты</a></li>
+          <li><a href="menu.html">Выпечка</a></li>
+          <li><a href="menu.html">Напитки</a></li>
+          <li><a href="menu.html">Завтраки</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Сладкая, 15</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> hello@honeycrumb.ru</p>
+          <p><i class="fas fa-clock"></i> Ежедневно 8:00 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Honey Crumb Bakery. Все права защищены.</p>
+      <p>Сделано с <i class="fas fa-heart"></i> и мёдом</p>
+    </div>
+  </footer>
+
+  <script>
+    const cartModal = document.getElementById('cartModal');
+    const reservationModal = document.getElementById('reservationModal');
+    
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        cartModal.style.display = 'flex';
+      });
+    });
+    
+    document.querySelector('.reservation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      reservationModal.style.display = 'flex';
+      this.reset();
+    });
+    
+    document.querySelectorAll('.modal-close, .modal-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.modal').forEach(modal => {
+          modal.style.display = 'none';
+        });
+      });
+    });
+    
+    window.addEventListener('click', function(e) {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
