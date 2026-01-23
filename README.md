@@ -6,7 +6,7 @@
     <td style="padding-left: 30px;">
       <h1 style="color: #d4a574; margin-top: 0;">Honey Crumb</h1>
       <p style="font-size: 16px; line-height: 1.6; color: #333;">
-        Honey Crumb — это минималистичный сайт для кафе, разработанный с акцентом на удобство пользователей. Сайт показывает меню, информацию о кафе, контакты и позволяет управлять заказами через страницу "Корзина".
+        Honey Crumb is a minimalist cafe website designed with a focus on user convenience. The site displays the menu, cafe information, contacts, and allows order management through the "Shopping Cart" page.
       </p>
       <p style="font-size: 16px;">
         <strong style="color: #d4a574;">Live Website:</strong><br>
